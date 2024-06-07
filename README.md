@@ -3,4 +3,6 @@ Exercício com PWA
 
 Previsão do tempo em tempo Real (Uso limitado) - Weatherbit
 
-#QRCODE
+#  Link & QRCODE
+
+
