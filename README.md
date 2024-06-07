@@ -1,3 +1,6 @@
+![W3c Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Feddcarrilho.github.io%2FPrevisao-do-Tempo%2F
+)
+
 # Previsao-do-Tempo
 Exercício com PWA
 
