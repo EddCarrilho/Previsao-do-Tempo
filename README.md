@@ -1,2 +1,6 @@
 # Previsao-do-Tempo
-Exercício de PWA
+Exercício com PWA
+
+Previsão do tempo em tempo Real (Uso limitado) - Weatherbit
+
+#QRCODE
