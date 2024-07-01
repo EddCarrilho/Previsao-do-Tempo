@@ -2,7 +2,7 @@
 function clima() {
     const key = '56d9afe18bea47feb638f299b4fe3409';
     const city = document.getElementById('city').value;
-    const ApiUrl = `http://api.weatherbit.io/v2.0/current?&city=${city}&key=${key}&include=minutely&lang=pt&units=M`;
+    const ApiUrl = `http://api.weatherbit.io/v2.0/current?city=${city}&key=${key}&include=minutely&lang=pt&units=M`;
 
     fetch(ApiUrl)
         .then((response) => {
