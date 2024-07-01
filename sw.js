@@ -1,5 +1,5 @@
 // Nome do cache (controle de versão)
-const cachePWA = 'cache-v2';
+const cachePWA = 'cache-v1';
 // Arquivos a serem armazenados em cache
 const urlsToCache = [
   '/',
