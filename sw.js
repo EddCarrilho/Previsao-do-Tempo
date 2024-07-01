@@ -1,5 +1,6 @@
 // Nome do cache (controle de versão)
-const cachePWA = 'cache-v1';
+const cachePWA = 'cache-v2';
+
 // Arquivos a serem armazenados em cache
 const urlsToCache = [
   '/',
@@ -28,12 +29,21 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request)
       .then((response) => {
-        // Se o arquivo está no cache, serve o arquivo do cache
         if (response) {
           return response
         }
-        // Caso contrário, faz uma solicitação de rede
         return fetch(event.request)
       })
   )
 })
+
+async function registerPeriodicNewsCheck() {
+  const registration = await navigator.serviceWorker.ready;
+  try {
+    await registration.periodicSync.register("get-latest-news", {
+      minInterval: 1 * 60 * 1000,
+    });
+  } catch {
+    console.log("Periodic Sync could not be registered!");
+  }
+}
